@@ -1,0 +1,12 @@
+{
+	"name": "http_prime_ls",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://raw.githubusercontent.com/rajendra5811/DE-4-primedata/refs/heads/main/amazon_prime_titles.csv",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
