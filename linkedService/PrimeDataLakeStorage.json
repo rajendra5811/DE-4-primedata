@@ -1,0 +1,12 @@
+{
+	"name": "PrimeDataLakeStorage",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://azprimework.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEUyNUQwRDNBLTY2QUQtNDJGQi1BRkY3LUU5QzgyOUMyNkJCOF85MGIzNjhmZC0xMTVjLTQwNDMtOTQ4Mi04YjhmYWRjMmU0YmMiDQp9"
+		}
+	}
+}
