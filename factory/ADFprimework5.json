@@ -1,0 +1,9 @@
+{
+	"name": "ADFprimework5",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ae6a78a6-58a3-40d2-b249-0c2b0127c903",
+		"tenantId": "211964cb-65ea-4226-836a-8bb58911b98c"
+	}
+}
