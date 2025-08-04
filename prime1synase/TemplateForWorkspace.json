@@ -183,7 +183,7 @@
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"content": {
-					"query": "-- CREATE MASTER KEY ENCRYPTION BY PASSWORD ='pass@colg123'\n-- CREATE DATABASE SCOPED CREDENTIAL cred_raj\n-- WITH \n--     IDENTITY ='Managed Identity'\n\n-- CREATE EXTERNAL DATA SOURCE gold_prime\n-- WITH\n-- (\n--     LOCATION = 'https://azprimework.blob.core.windows.net/gold/',\n--     CREDENTIAL = cred_raj\n-- )\n-- CREATE EXTERNAL FILE FORMAT format_parquet\n-- WITH\n-- (\n--     FORMAT_TYPE = PARQUET,\n--     DATA_COMPRESSION = 'org.apache.hadoop.io.compress.snappyCodes'\n-- )\n",
+					"query": "CREATE MASTER KEY ENCRYPTION BY PASSWORD ='pass@colg123'\nCREATE DATABASE SCOPED CREDENTIAL cred_raj\nWITH \n    IDENTITY ='Managed Identity'\n\nCREATE EXTERNAL DATA SOURCE gold_prime\nWITH\n(\n    LOCATION = 'https://azprimework.blob.core.windows.net/gold/',\n    CREDENTIAL = cred_raj\n)\nCREATE EXTERNAL FILE FORMAT format_parquet\nWITH\n(\n    FORMAT_TYPE = PARQUET,\n    DATA_COMPRESSION = 'org.apache.hadoop.io.compress.snappyCodes'\n)\nCREATE EXTERNAL TABLE gold.extprime\nWITH\n(\n    LOCATION = 'extprime',\n    DATA_SOURCE =source_gold,\n    FILE_FORMAT = format_parquet\n)\nAS\nSELECT * FROM gold.extprime\nSELECT * FROM gold.prime1",
 					"metadata": {
 						"language": "sql"
 					},
