@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 4",
+	"properties": {
+		"content": {
+			"query": "-- CREATE MASTER KEY ENCRYPTION BY PASSWORD ='pass@colg123'\n-- CREATE DATABASE SCOPED CREDENTIAL cred_raj\n-- WITH \n--     IDENTITY ='Managed Identity'\n\n-- CREATE EXTERNAL DATA SOURCE gold_prime\n-- WITH\n-- (\n--     LOCATION = 'https://azprimework.blob.core.windows.net/gold/',\n--     CREDENTIAL = cred_raj\n-- )\n-- CREATE EXTERNAL FILE FORMAT format_parquet\n-- WITH\n-- (\n--     FORMAT_TYPE = PARQUET,\n--     DATA_COMPRESSION = 'org.apache.hadoop.io.compress.snappyCodes'\n-- )\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "primeworks",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

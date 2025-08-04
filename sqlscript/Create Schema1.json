@@ -1,0 +1,17 @@
+{
+	"name": "Create Schema1",
+	"properties": {
+		"content": {
+			"query": "CREATE SCHEMA gold;",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "primeworks",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "create veiw gold",
+	"properties": {
+		"content": {
+			"query": "CREATE VIEW gold.prime1\nAS\nSELECT\n     *\nFROM\n    OPENROWSET\n        (\n            BULK 'https://azprimework.dfs.core.windows.net/gold/amazon_prime_titles_gold.csv/',\n            FORMAT = 'PARQUET' \n        )as QUE1",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "primeworks",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
