@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "prime1synase"
+		},
+		"PrimeDataLakeStorage_accountKey": {
+			"value": ""
+		},
+		"prime1synase-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:prime1synase.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"PrimeDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://azprimework.dfs.core.windows.net/"
+		},
+		"http_prime_ls_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/rajendra5811/DE-4-primedata/refs/heads/main/amazon_prime_titles.csv"
+		},
+		"prime1synase-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://azprimework.dfs.core.windows.net"
+		}
+	}
+}
