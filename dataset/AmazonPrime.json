@@ -1,0 +1,24 @@
+{
+	"name": "AmazonPrime",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "PrimeDataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "amazon_prime.csv",
+				"folderPath": "good",
+				"fileSystem": "bronze"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
