@@ -12,6 +12,6 @@ create data bricks , commpute resources and setup connect to adls ( azure datala
 data transformation applied like data format changes .....etc
 This transformed data placed in silver container 
 ## step=3
-to connect synapse and get data from silver container into sql database.
+to get data from silver container into sql database.
 create schema and external location in gold container.
-integration of power bi
+additional integration of power bi
