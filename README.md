@@ -1,4 +1,6 @@
-### primedata architechure 
+### primedata architechure  
+<img width="831" height="558" alt="image" src="https://github.com/user-attachments/assets/6bbbf132-1771-4b18-b9b6-dd8ec1693ffd" />
+
 dataset from kaggle
 https://www.kaggle.com/datasets/shivamb/amazon-prime-movies-and-tv-shows
 ##step-1
